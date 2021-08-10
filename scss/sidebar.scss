@@ -1,0 +1,221 @@
+.sidebar {
+    width: 100%;
+    max-width: 320px;
+    padding-top: 20px;
+
+    .breadcrumbs {
+        display: flex;
+
+        li {
+            &::after{
+                content: '/';
+                margin-right: 3px;
+                margin-left: 3px;
+            }
+
+            &:last-child::after {
+                content: '';
+            }
+
+            a {
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 15px;
+                color: #000000;
+            }
+        }
+    }
+
+    .user-block {
+        margin-top:20px;
+        padding:12px 0;
+        background-image: url('../img/icons/box.svg');
+        background-repeat: no-repeat;
+        background-size: 50px;
+        background-position: 10px center;
+
+        p.name {
+            margin-left: 80px;
+            margin-bottom: 5px;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 17px;
+            color: #2C2D41;
+        }
+
+        p.email {
+            display: inline-block;
+            padding:3px 10px 5px;
+            margin-left: 80px;
+            background: #5CCEB0;
+            border-radius: 5px;;
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 16px;
+            color: #FFFFFF;
+        }
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+        margin-top:20px;
+        
+
+        a {
+            margin-left: 35px;
+            display: block;
+            position: relative;
+            padding-left: 30px;
+            font-weight: 600;
+            font-size: 13px;
+            line-height: 40px;
+            color: #000000;
+            background-repeat: no-repeat;
+            background-position: left center;
+
+            &.active {
+                color: #576AD6;
+            }
+
+            &.parent {
+
+                &:after {
+                    content:'+';
+                    position: absolute;
+                    right:30px;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 40px;
+                }
+            }
+            
+            &.home {
+                background-image: url('../img/icons/home.svg');
+                background-size:18px 18px;
+
+                &.active {
+                    background-image: url('../img/icons/home_active.svg');   
+                }
+            }
+
+            &.packages {
+                background-image: url('../img/icons/packages.svg');
+                background-size:18px 15px;
+
+                &.active {
+                    background-image: url('../img/icons/packages_active.svg');   
+                }
+            }
+
+            &.shopping {
+                background-image: url('../img/icons/shopping.svg');
+                background-size:16px 18px;
+
+                &.active {
+                    background-image: url('../img/icons/shopping_active.svg');   
+                }
+            }
+
+            &.fast {
+                background-image: url('../img/icons/fast.svg');
+                background-size:18px 18px;
+
+                &.active {
+                    background-image: url('../img/icons/fast_active.svg');   
+                }
+            }
+
+            &.discounts {
+                background-image: url('../img/icons/discounts.svg');
+                background-size:16px 16px;
+
+                &.active {
+                    background-image: url('../img/icons/discounts_active.svg');   
+                }
+            }
+
+            &.partners {
+                background-image: url('../img/icons/partners.svg');
+                background-size:16px 40px;
+
+                &.active {
+                    background-image: url('../img/icons/partners_active.svg');   
+                }
+            }
+
+            &.settings {
+                background-image: url('../img/icons/settings.svg');
+                background-size:16px 16px;
+
+                &.active {
+                    background-image: url('../img/icons/settings_active.svg');   
+                }
+            }
+
+            &.support {
+                background-image: url('../img/icons/support.svg');
+                background-size:14px 16px;
+
+                &.active {
+                    background-image: url('../img/icons/support_active.svg');   
+                }
+            }
+
+            &.faq {
+                background-image: url('../img/icons/faq.svg');
+                background-size:17px 17px;
+
+                &.active {
+                    background-image: url('../img/icons/faq_active.svg');   
+                }
+            }
+
+            &.logout {
+                background-image: url('../img/icons/logout.svg');
+                background-size:14px 14px;
+
+                &.active {
+                    background-image: url('../img/icons/logout_active.svg');   
+                }
+            }
+        }
+
+        .has-child {
+
+            &.opened {
+                padding:5px 0;
+
+                .parent {
+
+                    &:after {
+                        content:'-';
+                        position: absolute;
+                        right:30px;
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 40px;
+                    }
+                }
+            }
+        }
+
+        .child {
+            display:none;
+            border-top: 2px solid rgba(111, 131, 238, 0.1);
+            padding-top:20px;
+
+            &.show {
+                display: block;
+            }
+
+            a {
+                margin-bottom: 17px;
+                font-weight: 500;
+                font-size: 13px;
+                line-height: 16px;
+                color: #454E58;
+            }
+        }
+    }
+}

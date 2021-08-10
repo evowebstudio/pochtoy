@@ -1,0 +1,30 @@
+.content-area {
+    width: 100%;
+    max-width: $maxWidthContent;
+    margin:0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.shadow-block {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px #D1E6FB;
+    border-radius: 7px;
+}
+
+.btn {
+    @include btn (#FFF, #FF006D, 0 13px);
+
+    &.with-border {
+        color: #5B72EC;
+        background-color: #FFF;
+        border: 2px solid #5B72EC;
+    }
+
+    &.blue {
+        color:#fff;
+        background-color: #5B72EC;
+        border: 2px solid #5B72EC;
+    }
+}

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    <title>pochtoy.com</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <a href="/" class="logo">
+                <img src="img/logo.svg" alt="">
+            </a>
+            <div class="lang-selector">
+                <img src="img/flags/rus.svg" alt="" class="flag">
+                <p>Рус</p>
+                <button class="open"></button>
+            </div>
+            <ul>
+                <li><a href="#">Как покупать</a></li>
+                <li><a href="#">Распродажи</a></li>
+                <li><a href="#">Цены</a></li>
+                <li><a href="#">Помощь</a></li>
+                <li><a href="#">Бонусы</a></li>
+                <li><a href="#">Блог</a></li>
+                <li class="parent"><a href="#">Еще</a></li>
+            </ul>
+            <button class="btn btn-pink">Заказать товар из США</button>
+            <div class="alert-block active"></div>
+            <a href="#" class="login">Войти</a>
+        </div>
+    </header>
+
+    <div class="content-area">
+        <div class="sidebar">
+            <ul class="breadcrumbs">
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Личный кабинет</a></li>
+            </ul>
+            <div class="user-block shadow-block">
+                <p class="name">Здравствуйте, ANASTAIYA!</p>
+                <p class="email">anna@inbox.com</p>
+            </div>
+            <nav class="nav">
+                <a href="#" class="home active">Главная страница</a>
+                <ul class="has-child opened shadow-block">
+                    <a href="#" class="shopping parent">Помощь с покупками</a>
+                    <div class="child show">
+                        <a href="">Новый заказ</a>
+                        <a href="">Заказы в работе</a>
+                        <a href="">Архив заказов</a>
+                    </div>
+                </ul>
+                <a href="#" class="packages parent">Мои посылки</a>
+                <a href="#" class="fast">Оформить SuperFast</a>
+                <a href="#" class="discounts">Скидки и бонусы</a>
+                <a href="#" class="partners parent">Партнерская программа</a>
+                <a href="#" class="settings">Настройки</a>
+                <a href="#" class="support">Служба поддержки</a>
+                <a href="#" class="faq">Помощь</a>
+                <a href="#" class="logout">Выход</a>
+            </nav>
+        </div>
+        <div class="content">
+            <div class="time">
+                <p>Время на складе:<span>07:51:21</span></p>
+            </div>
+            <div class="text-top">
+                <p class="title">Новый заказ</p>
+                <p>Чтобы не разбираться в тонкостях шопинга в США или если интернет-магазин не принимает ваше
+                    кредитику — попробуйте купить товары через операторв Pochtoy.com.<br><br>
+                    Вам останется подождать, когда товары попадут на склад и будут доступны для оформления посылки к
+                    сборке и отправке к вам.</p>
+                <a href="#">Подробнее</a>
+            </div>
+            <div class="form-block shadow-block">
+                <p class="title">Добавление товара в заказ</p>
+                <div class="input-group">
+                    <label for="">Ссылка на товар</label>
+                    <input type="text" placeholder="Например: http://amazom.com/phone/iphone12" name="url"
+                        class="input">
+                </div>
+                <div class="input-group">
+                    <label for="">Название товара на сайте</label>
+                    <input type="text" placeholder="Например: Iphone 12 pro 256 gold" name="name">
+                </div>
+                <div class="input-row">
+                    <div class="input-group">
+                        <label for="">Цена</label>
+                        <input type="text" placeholder="Например: $123.33" name="price">
+                    </div>
+                    <div class="input-group">
+                        <label for="">Цвет (colour)</label>
+                        <input type="text" placeholder="Например: green" name="color">
+                    </div>
+                    <div class="input-group">
+                        <label for="">Размер (size)</label>
+                        <input type="text" placeholder="Например: 7 M / 9,5 W" name="size">
+                    </div>
+                    <div class="input-group">
+                        <label for="">Количество</label>
+                        <input type="text" placeholder="Например: 1" name="qty">
+                    </div>
+                </div>
+                <div class="input-row thin">
+                    <div class="input-group">
+                        <label for="">Замена по размеру</label>
+                        <input type="text" placeholder="Например: 7 M / 9,5 W" name="double-size">
+                        <p>На случай отсутствия основного варианта.</p>
+                    </div>
+                    <div class="input-group">
+                        <label for="">Замена по цвету</label>
+                        <input type="text" placeholder="Например: green" name="double-color">
+                        <p>На случай отсутствия основного варианта.</p>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <input type="button" class="btn blue" value="Предпросмотр заказа">
+                    <input type="button" class="btn with-border" value="Сохранить и добавить еще один товар">
+                </div>
+            </div>
+            <div class="content-block shadow-block with-margin">
+                <p class="title">Заказ №1387626-1 <span>(Amazon.com)</span></p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Название</th>
+                            <th>Цена</th>
+                            <th>Цвет</th>
+                            <th>Размер</th>
+                            <th>Кол-во</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="num">1</td>
+                            <td class="name">Iphone 12 pro 256 gold</td>
+                            <td class="price">1000$</td>
+                            <td>Black&White</td>
+                            <td>7m / 10,5W</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td class="num">2</td>
+                            <td class="name">Iphone 12 pro 256 gold</td>
+                            <td class="price">1000$</td>
+                            <td>Black&White</td>
+                            <td>7m / 10,5W</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td class="num">3</td>
+                            <td class="name">Iphone 12 pro 256 gold</td>
+                            <td class="price">1000$</td>
+                            <td>Black&White</td>
+                            <td>7m / 10,5W</td>
+                            <td>1</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="total">
+                    <thead>
+                        <tr>
+                            <th>Стоимость товаров:</th>
+                            <th>Товаров в заказе:</th>
+                            <th>Комиссия:</th>
+                            <th>Промокод:</th>
+                            <th>Налог штата:</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="price">$2 467.55</td>
+                            <td>12 шт.</td>
+                            <td>$25.00</td>
+                            <td>FAST2FATS3</td>
+                            <td>$0</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="input-group">
+                    <label for="">Комментариий или промокод сайта:</label>
+                    <textarea>примените промокод 40estra  без него не выкупайте товар; выкупайте заказ как есть; если не будет размера s/m купите m/l</textarea>
+                </div>
+                <div class="promocode-form">
+                    <label for="">Если у вас есть промокод на бесплатный выкуп заказа – введите его здесь и нажмите
+                        применить:</label>
+                    <div class="promocode-row">
+                        <input type="text" name="promocode" placeholder="Например: NEW20">
+                        <input type="submit" value="Применить">
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label for="">Комментарий или промокод для сайта выкупа</label>
+                    <textarea placeholder="Укажите свой комментарий"></textarea>
+                </div>
+                <div class="options">
+                    <p>Что делать если такого товара не будет в магазине:</p>
+                    <div class="row">
+                        <div class="radio-row">
+                            <input type="radio" id="option-buy" name="what-do">
+                            <label for="option-buy">Купить те товары, которые будут</label>
+                        </div>
+                        <div class="radio-row">
+                            <input type="radio" id="option-cancel" name="what-do">
+                            <label for="option-cancel">Отменить весь заказ</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="options">
+                    <div class="row">
+                        <input type="checkbox" name="promocode-inactive" id="promocode-inactive">
+                        <label for="promocode-inactive">Если промокод на сайте выкупа не cработает, я соглашаюсь с
+                            выкупом заказа без скидки.</label>
+                    </div>
+                </div>
+                <div class="buttons-group">
+                    <input type="button" class="btn blue" value="Оформить заказ и оплатить">
+                    <input type="button" class="btn with-border" value="Редактирование заказа">
+                </div>
+            </div>
+            <div class="content-block shadow-block with-margin">
+                <p class="title">Заказ №1387626-1 <span>(Amazon.com)</span></p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Название</th>
+                            <th>Цена</th>
+                            <th>Цвет</th>
+                            <th>Размер</th>
+                            <th>Кол-во</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="num">1</td>
+                            <td class="name">Iphone 12 pro 256 gold</td>
+                            <td class="price">1000$</td>
+                            <td>Black&White</td>
+                            <td>7m / 10,5W</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td class="num">2</td>
+                            <td class="name">Iphone 12 pro 256 gold</td>
+                            <td class="price">1000$</td>
+                            <td>Black&White</td>
+                            <td>7m / 10,5W</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td class="num">3</td>
+                            <td class="name">Iphone 12 pro 256 gold</td>
+                            <td class="price">1000$</td>
+                            <td>Black&White</td>
+                            <td>7m / 10,5W</td>
+                            <td>1</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="total">
+                    <thead>
+                        <tr>
+                            <th>Стоимость товаров:</th>
+                            <th>Товаров в заказе:</th>
+                            <th>Комиссия:</th>
+                            <th>Промокод:</th>
+                            <th>Налог штата:</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="price">$2 467.55</td>
+                            <td>12 шт.</td>
+                            <td>$25.00</td>
+                            <td>FAST2FATS3</td>
+                            <td>$0</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="input-group">
+                    <label for="">Комментариий или промокод сайта:</label>
+                    <textarea>примените промокод 40estra  без него не выкупайте товар; выкупайте заказ как есть; если не будет размера s/m купите m/l</textarea>
+                </div>
+                <div class="promocode-form">
+                    <label for="">Если у вас есть промокод на бесплатный выкуп заказа – введите его здесь и нажмите
+                        применить:</label>
+                    <div class="promocode-row">
+                        <input type="text" name="promocode" placeholder="Например: NEW20">
+                        <input type="submit" value="Применить">
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label for="">Комментарий или промокод для сайта выкупа</label>
+                    <textarea placeholder="Укажите свой комментарий"></textarea>
+                </div>
+                <div class="options">
+                    <p>Что делать если такого товара не будет в магазине:</p>
+                    <div class="row">
+                        <div class="radio-row">
+                            <input type="radio" id="option-buy" name="what-do">
+                            <label for="option-buy">Купить те товары, которые будут</label>
+                        </div>
+                        <div class="radio-row">
+                            <input type="radio" id="option-cancel" name="what-do">
+                            <label for="option-cancel">Отменить весь заказ</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="options">
+                    <div class="row">
+                        <input type="checkbox" name="promocode-inactive" id="promocode-inactive">
+                        <label for="promocode-inactive">Если промокод на сайте выкупа не cработает, я соглашаюсь с
+                            выкупом заказа без скидки.</label>
+                    </div>
+                </div>
+                <div class="buttons-group">
+                    <input type="button" class="btn blue" value="Оформить заказ и оплатить">
+                    <input type="button" class="btn with-border" value="Редактирование заказа">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

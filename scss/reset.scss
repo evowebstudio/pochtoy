@@ -1,0 +1,47 @@
+*{
+    margin:0;
+    padding:0;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+p, label, input, button, th, td, textarea {
+    font-family: 'Montserrat', sans-serif;
+}
+body {
+    background: #f7f9fb;
+}
+button {
+    background-color: transparent;
+    cursor: pointer;
+    box-sizing: border-box;
+    border:0;
+}
+input {
+    border:0;
+    outline: none;
+
+    &:focus {
+        box-shadow: none;
+        border:0;
+    }
+
+    &[type="button"],
+    &[type="submit"] {
+        cursor: pointer;
+    }
+}
+textarea {
+    box-shadow: none;
+    border:0;
+    outline: none;
+    
+    &:focus {
+        box-shadow: none;
+        border:0;
+    }
+}

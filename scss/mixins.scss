@@ -1,0 +1,42 @@
+@mixin btn ($color, $bgColor, $padding) {
+    padding: $padding;
+    background: $bgColor;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 36px;
+    color:$color;
+    border-radius: 5px;
+    border: 2px solid $bgColor;
+    box-sizing: border-box;
+}
+
+@mixin label {
+    margin-bottom:8px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    color: #454E58;
+}
+
+@mixin input {
+    width: 100%;
+    padding:12px 14px;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    color: #000000;
+    border: 2px solid #BAC1E7;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+@mixin radio {
+    margin-right: 10px;
+    margin-top:2px;
+}
+
+@mixin checkbox {
+    margin-right: 10px;
+    margin-top:2px;
+}
