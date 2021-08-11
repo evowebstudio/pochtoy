@@ -413,6 +413,21 @@ header .header .alert-block.active:after {
   line-height: 16px;
   color: #454E58;
 }
+.sidebar .nav .child a.is-alert {
+  position: relative;
+}
+.sidebar .nav .child a.is-alert:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  width: 8px;
+  height: 8px;
+  margin-top: -4px;
+  background-color: #FF006D;
+  border-radius: 4px;
+}
 
 .content {
   width: 100%;
