@@ -474,6 +474,16 @@
                             background: #48CDAF;
                             border-radius: 2px;
                         }
+
+                        &.status-process {
+                            padding:7px 8px;
+                            font-weight: 600;
+                            font-size: 12px;
+                            line-height: 10px;
+                            color:#fff;
+                            background: #FF006D;
+                            border-radius: 2px;
+                        }
                     }
                 }
             }
@@ -501,6 +511,12 @@
                 font-size: 13px;
                 line-height: 16px;
                 color: #616E81;
+
+                &.small-p {
+                    font-size:12px;
+                    line-height: 18px;
+                    font-weight: 500;
+                }
             }
 
             a {
@@ -535,9 +551,12 @@
             }
 
             .right {
-
                 .btn {
                     margin-left: 10px;
+
+                    &.blue {
+                        min-width: 206px;
+                    }
                 }
             }
         }

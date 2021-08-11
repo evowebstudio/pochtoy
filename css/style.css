@@ -915,6 +915,15 @@ header .header .alert-block.active:after {
   background: #48CDAF;
   border-radius: 2px;
 }
+.content .content-block .order-info-head .left .col p.status-process {
+  padding: 7px 8px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 10px;
+  color: #fff;
+  background: #FF006D;
+  border-radius: 2px;
+}
 .content .content-block .order-info-head .right .col p {
   font-weight: 600;
   font-size: 15px;
@@ -930,6 +939,11 @@ header .header .alert-block.active:after {
   font-size: 13px;
   line-height: 16px;
   color: #616E81;
+}
+.content .content-block .order-info-description p.small-p {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 500;
 }
 .content .content-block .order-info-description a {
   font-weight: 600;
@@ -970,4 +984,7 @@ header .header .alert-block.active:after {
 }
 .content .content-block .order-info-footer .right .btn {
   margin-left: 10px;
+}
+.content .content-block .order-info-footer .right .btn.blue {
+  min-width: 206px;
 }
