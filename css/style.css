@@ -54,6 +54,18 @@ textarea:focus {
   border: 0;
 }
 
+@font-face {
+  font-family: "Gilroy";
+  font-weight: 600;
+  font-style: normal;
+  src: url("../fonts/gilroy-semibold.woff2") format("woff2"), url("../fonts/gilroy-semibold.woff") format("woff");
+}
+@font-face {
+  font-family: "Gilroy";
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/gilroy-medium.woff2") format("woff2"), url("../fonts/gilroy-medium.woff") format("woff");
+}
 .content-area {
   width: 100%;
   max-width: 1120px;
@@ -78,6 +90,7 @@ textarea:focus {
 }
 
 .btn {
+  display: inline-block;
   padding: 0 13px;
   background: #FF006D;
   font-style: normal;
@@ -89,6 +102,7 @@ textarea:focus {
   border: 2px solid #FF006D;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  min-width: 40px;
 }
 .btn.with-border {
   color: #5B72EC;
@@ -987,4 +1001,77 @@ header .header .alert-block.active:after {
 }
 .content .content-block .order-info-footer .right .btn.blue {
   min-width: 206px;
+}
+
+.title-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding-top: 36px;
+}
+.title-block > div {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.title-block > div.img {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.title-block .title {
+  position: relative;
+  max-width: 460px;
+  color: #3A78BC;
+  font-family: "Gilroy";
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 80px;
+  letter-spacing: -0.01em;
+}
+.title-block .title span {
+  color: #FF006D;
+}
+.title-block .title:before {
+  content: "";
+  display: block;
+  width: 86px;
+  height: 49px;
+  position: absolute;
+  left: -76px;
+  top: -13px;
+  background-image: url("../img/dollar.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.title-block .text {
+  margin-top: 20px;
+  max-width: 417px;
+  font-family: "Gilroy";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  color: #000000;
+}
+.title-block .btn {
+  margin-top: 50px;
 }

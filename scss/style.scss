@@ -1,8 +1,9 @@
 @import 'vars';
 @import 'reset';
 @import 'mixins';
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap');
+@import 'fonts';
 @import 'common';
 @import 'header';
 @import 'sidebar';
 @import 'content';
+@import 'title-block';
