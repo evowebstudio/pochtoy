@@ -1,0 +1,110 @@
+.tab-slider-wrap {
+    position: relative;
+    width: 100%;
+    max-width: $maxWidthContent;
+    margin:68px auto 0;
+
+    .tab-slider {
+        display: flex;
+        flex-direction: row;
+        box-shadow: 0px 0px 60px #D5EAF1;
+        border-radius: 50px;
+        position: relative;
+
+        &.blue {
+            background: linear-gradient(100.49deg, #A1B9F9 1.62%, #5575E7 98.14%);
+        }
+
+        &>div {
+            padding:25px 78px 30px 0;
+
+            &:first-child {
+                padding-left: 99px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+            }
+        }
+
+        .title {
+            max-width: 527px;
+            font-family: 'Gilroy';
+            font-weight: 600;
+            font-size: 40px;
+            line-height: 48px;
+            color: #FFFFFF;
+        }
+
+        .text {
+            font-family: 'Gilroy';
+            margin-top:40px;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 30px;
+            color:#fff;
+        }
+
+        .row {
+            display: flex;
+        }
+
+        .btn {
+            width: 297px;
+            margin-top:50px;
+            min-height: 60px;
+            border: 2px solid transparent;
+            box-sizing: border-box;
+            border-radius: 10px;
+            font-family: 'Montserrat';
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &:first-child {
+                margin-right: 15px;
+            }
+
+            &.white {
+                background-color: #fff;
+                color: #000000;
+            }
+            
+            &.border-white {
+                background-color: transparent;
+                border: 2px solid #FFFFFF;
+                color:#fff;
+            }
+        }
+    }
+
+    .pagination {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        bottom: 22px;
+        left: 99px;
+
+        .item {
+            display: block;
+            width: 61px;
+            height: 3px;
+            margin-right: 10px;
+            background: #FFFFFF;
+            border-radius: 5px;
+            cursor: pointer;
+            
+            &:last-child {
+                margin-right: 0;
+            }
+
+            &.active {
+                background-color: #000;
+                opacity: 0.5;
+            }
+        }
+    }
+}

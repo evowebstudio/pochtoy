@@ -1073,5 +1073,142 @@ header .header .alert-block.active:after {
   color: #000000;
 }
 .title-block .btn {
+  font-size: 16px;
   margin-top: 50px;
+  width: 297px;
+  min-height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.tab-slider-wrap {
+  position: relative;
+  width: 100%;
+  max-width: 1120px;
+  margin: 68px auto 0;
+}
+.tab-slider-wrap .tab-slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-shadow: 0px 0px 60px #D5EAF1;
+          box-shadow: 0px 0px 60px #D5EAF1;
+  border-radius: 50px;
+  position: relative;
+}
+.tab-slider-wrap .tab-slider.blue {
+  background: linear-gradient(100.49deg, #A1B9F9 1.62%, #5575E7 98.14%);
+}
+.tab-slider-wrap .tab-slider > div {
+  padding: 25px 78px 30px 0;
+}
+.tab-slider-wrap .tab-slider > div:first-child {
+  padding-left: 99px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.tab-slider-wrap .tab-slider .title {
+  max-width: 527px;
+  font-family: "Gilroy";
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 48px;
+  color: #FFFFFF;
+}
+.tab-slider-wrap .tab-slider .text {
+  font-family: "Gilroy";
+  margin-top: 40px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  color: #fff;
+}
+.tab-slider-wrap .tab-slider .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.tab-slider-wrap .tab-slider .btn {
+  width: 297px;
+  margin-top: 50px;
+  min-height: 60px;
+  border: 2px solid transparent;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.tab-slider-wrap .tab-slider .btn:first-child {
+  margin-right: 15px;
+}
+.tab-slider-wrap .tab-slider .btn.white {
+  background-color: #fff;
+  color: #000000;
+}
+.tab-slider-wrap .tab-slider .btn.border-white {
+  background-color: transparent;
+  border: 2px solid #FFFFFF;
+  color: #fff;
+}
+.tab-slider-wrap .pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: absolute;
+  bottom: 22px;
+  left: 99px;
+}
+.tab-slider-wrap .pagination .item {
+  display: block;
+  width: 61px;
+  height: 3px;
+  margin-right: 10px;
+  background: #FFFFFF;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.tab-slider-wrap .pagination .item:last-child {
+  margin-right: 0;
+}
+.tab-slider-wrap .pagination .item.active {
+  background-color: #000;
+  opacity: 0.5;
 }

@@ -58,6 +58,12 @@
     }
 
     .btn {
+        font-size: 16px;
         margin-top:50px;
+        width: 297px;
+        min-height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
