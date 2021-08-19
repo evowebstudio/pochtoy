@@ -1,0 +1,82 @@
+.benefits {
+    margin:97px auto 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .title {
+        max-width: 449px;
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        
+        span {
+            color: #3A78BC;
+            
+            line-height: 50px;
+        }
+    }
+
+    .sub-title {
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 50px;
+        color: #000000;
+    }
+
+    .btn {
+        @include btnBig(#FFF, #3A78BC, #3A78BC);
+        margin-top:24px;
+    }
+
+    .content {
+        max-width: 633px;
+
+        .item {
+            width: 633px;
+            margin-bottom: 20px;
+            padding:24px 40px 32px 40px;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            background: #FFFFFF;
+            box-shadow: 0px 0px 60px #D5EAF1;
+            border-radius: 40px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            img {
+                margin-top:12px;
+            }
+
+            .text {
+                margin-left: 24px;
+
+                .title {
+                    font-family: Gilroy;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 22px;
+                    line-height: 50px;
+                    color: #000000;
+                }
+
+                .description {
+                    max-width: 345px;
+                    font-family: Gilroy;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 30px;
+                    color: #586271;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,155 @@
+.reviews {
+    margin: 88px auto 0;
+
+    .heading {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .title {
+            font-family: Gilroy;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 30px;
+            color: #2D2F33;
+        }
+
+        .btn {
+            @include btnBig(#FFF, #FF006D, #FF006D);
+            margin-top:32px;
+        }
+
+        .description {
+            margin-top:27px;
+            max-width: 749px;
+            font-family: Gilroy;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 170%;
+            color: #586271;
+            text-align:center;
+
+            span {
+                display: block;
+                margin-top:24px;
+                color:#3578DC;
+            }
+        }
+    }
+
+    .grid {
+        margin-top:45px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .item {
+            margin-bottom:18px;
+            padding:20px 30px 18px;
+            width: 560px;
+            background: #FFFFFF;
+            box-shadow: 0px 0px 60px #D5EAF1;
+            border-radius: 20px;
+
+            .head {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+
+                .name {
+                    font-family: Gilroy;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 20px;
+                    color: #3578DC;
+                }
+
+                .stars-wrap {
+                    display: inline-block;
+                    vertical-align: middle;
+                    position: relative;
+                    z-index: 1;
+
+                    .stars {
+                        display: block;
+                        width: 108px;
+                        height: 19px;
+                        margin: 0;
+                        padding: 0;
+                        font-size: 0;
+                        white-space: nowrap;
+                        line-height: 19px;
+                        background-image: url('../img/star-array.svg');
+                        background-position: left top;
+                    }
+    
+                    .stars-fill {
+                        position: absolute;
+                        left: 1px;
+                        top: 1px;
+                        bottom: 1px;
+                        z-index: -1;
+                        background-color: #FF006D;
+                        width: 0%;
+
+                        &[data-rating='1'] {
+                            width: 20%;
+                        }
+
+                        &[data-rating='2'] {
+                            width: 40%;
+                        }
+
+                        &[data-rating='3'] {
+                            width: 60%;
+                        }
+
+                        &[data-rating='4'] {
+                            width: 80%;
+                        }
+                        
+                        &[data-rating='5'] {
+                            width: calc(100% - 3px);
+                        }
+                    }
+                }
+            }
+
+            .meta {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin-top:12px;
+                
+                p {
+                    font-family: Gilroy;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 13px;
+                    line-height: 16px;
+                    color: #2B343F;
+
+                    span {
+                        color:#000;
+                    }
+                }
+            }
+            
+            .content {
+                margin-top:18px;
+                font-family: Gilroy;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 13px;
+                line-height: 21px;
+                color: #586271;
+            }
+        }
+    }
+}
