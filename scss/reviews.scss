@@ -19,6 +19,10 @@
         .btn {
             @include btnBig(#FFF, #FF006D, #FF006D);
             margin-top:32px;
+
+            &:hover {
+                @include btnBigHover;
+            }
         }
 
         .description {

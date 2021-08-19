@@ -31,6 +31,10 @@
     line-height: 40px;
 }
 
+@mixin btnBigHover {
+    opacity: 0.8;
+}
+
 @mixin label {
     margin-bottom:8px;
     font-weight: 600;

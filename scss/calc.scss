@@ -205,6 +205,10 @@
     .btn {
         @include btnBig(#FFF, #FF006D, #FF006D);
         margin:0 auto;
+
+        &:hover {
+            @include btnBigHover;
+        }
     }
 
     .terms-link {

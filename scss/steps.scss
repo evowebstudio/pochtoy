@@ -148,6 +148,10 @@
 
         .btn {
             @include btnBig(#FFF, #FF006D, #FF006D);
+
+            &:hover {
+                @include btnBigHover;
+            }
         }
     }
 }

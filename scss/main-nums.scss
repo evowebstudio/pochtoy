@@ -54,21 +54,12 @@
     }
 
     .btn {
-        width: 297px;
-        min-height: 60px;
-        margin-top:32px;
-        border: 2px solid transparent;
-        box-sizing: border-box;
-        border-radius: 10px;
-        font-family: 'Montserrat';
-        font-weight: 600;
-        font-size: 16px;
-        line-height: 40px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: #fff;
-        color:#000;
+        @include btnBig(#000, #fff, #fff);
+            margin-top:32px;
+
+        &:hover {
+            @include btnBigHover;
+        }
     }
 
     img {

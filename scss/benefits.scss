@@ -31,6 +31,10 @@
     .btn {
         @include btnBig(#FFF, #3A78BC, #3A78BC);
         margin-top:24px;
+
+        &:hover {
+            @include btnBigHover;
+        }
     }
 
     .content {

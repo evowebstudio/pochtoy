@@ -39,5 +39,9 @@
     .btn {
         @include btnBig(#000, #fff, #fff);
         margin-top:20px;
+
+        &:hover {
+            @include btnBigHover;
+        }
     }
 }

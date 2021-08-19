@@ -58,5 +58,9 @@
     .btn {
         @include btnBig(#FFF, #FF006D, #FF006D);
         margin-top:50px;
+
+        &:hover {
+            @include btnBigHover;
+        }
     }
 }
