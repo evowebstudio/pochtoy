@@ -1,0 +1,100 @@
+.how-to-buy {
+    margin:90px auto 0;
+
+    .heading {
+        text-align:center;
+
+        .title {
+            max-width: 517px;
+            margin:0 auto;
+            font-family: Gilroy;
+            font-size: 40px;
+            line-height: 60px;
+            color: #040404;
+        }
+
+        .text {
+            margin:20px auto 0;
+            max-width: 935px;
+            
+            p {
+                margin-bottom:24px;
+                font-family: Gilroy;
+                font-size: 22px;
+                line-height: 30px;
+                color: #586271;    
+            }
+        }
+    }
+
+    .row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 990px;
+        margin:36px auto 123px;
+
+        .num {
+            font-family: Gilroy;
+            font-style: normal;
+            font-weight: 100;
+            font-size: 144px;
+            line-height: 165px;
+            color: #FF006D;
+        }
+
+        .content {
+            max-width: 478px;
+            padding-top:24px;
+
+            .title {
+                max-width: 328px;
+                font-family: Gilroy;
+                font-size: 24px;
+                line-height: 32px;
+                color: #000000;
+            }
+
+            
+
+            .text {
+
+                p {
+                    margin-top:24px;
+                    font-family: Gilroy;
+                    font-size: 18px;
+                    line-height: 26px;
+                    color: #586271;
+                }
+
+                a {
+                    color:#6392CA;
+                }
+            }    
+        }
+
+        .image {
+            padding-top:24px;
+        }
+
+        .btn {
+            @include btnBig(#FFF, #FF006D, #FF006D);
+            margin-top:9px;
+    
+            &:hover {
+                @include btnBigHover;
+            }
+        }
+
+        &:nth-child(5) {
+
+            .title {
+                max-width: 355px;
+            }
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

@@ -1,0 +1,28 @@
+.breadcrumbs {
+    position: relative;
+    display: flex;
+
+    &.pos-abs {
+        position: absolute;
+        top:24px;
+    }
+
+    li {
+        &::after{
+            content: '/';
+            margin-right: 3px;
+            margin-left: 3px;
+        }
+
+        &:last-child::after {
+            content: '';
+        }
+
+        a {
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 15px;
+            color: #000000;
+        }
+    }
+}

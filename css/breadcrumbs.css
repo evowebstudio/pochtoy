@@ -1,0 +1,19 @@
+.breadcrumbs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.breadcrumbs li::after {
+  content: "/";
+  margin-right: 3px;
+  margin-left: 3px;
+}
+.breadcrumbs li:last-child::after {
+  content: "";
+}
+.breadcrumbs li a {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #000000;
+}

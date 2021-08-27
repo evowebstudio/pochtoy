@@ -30,18 +30,20 @@
             color:#FF006D;
         }
 
-        &:before {
-            content : "";
-            display: block;
-            width: 86px;
-            height: 49px;
-            position: absolute;
-            left: -76px;
-            top: -13px;
-            background-image: url('../img/dollar.svg');
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: contain;
+        &.with-label {
+            &:before {
+                content : "";
+                display: block;
+                width: 86px;
+                height: 49px;
+                position: absolute;
+                left: -76px;
+                top: -13px;
+                background-image: url('../img/dollar.svg');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+            }
         }
     }
 
@@ -53,6 +55,11 @@
         font-size: 16px;
         line-height: 30px;
         color: #000000;
+
+        &.bold {
+            font-size:18px;
+            max-width: 544px;
+        }
     }
 
     .btn {

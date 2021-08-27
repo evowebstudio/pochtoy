@@ -1,0 +1,48 @@
+.videos {
+    margin: 48px auto 0;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    .item {
+        position: relative;
+        max-width: 546px;
+        border-radius: 38px 38px 0px 0px;
+        border: 2px solid #FE016D;
+        box-sizing: border-box;
+        border-radius: 40px;
+
+        .play {
+            position: absolute;
+            width: 158px;
+            height: 88px;
+            top:50%;
+            left: 50%;
+            margin-top: -102px;
+            margin-left:-79px;
+            z-index: 1;
+            background-image: url('../img/icons/play.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        .title {
+            padding:30px 28px;
+            background-color: #fff;
+            border-bottom-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+
+            p {
+                font-family: Gilroy;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 29px;
+                text-align: center;
+                color: #3A78BC;
+            }
+        }
+    }
+}

@@ -2,30 +2,7 @@
     width: 100%;
     max-width: 320px;
     padding-top: 20px;
-
-    .breadcrumbs {
-        display: flex;
-
-        li {
-            &::after{
-                content: '/';
-                margin-right: 3px;
-                margin-left: 3px;
-            }
-
-            &:last-child::after {
-                content: '';
-            }
-
-            a {
-                font-weight: 500;
-                font-size: 12px;
-                line-height: 15px;
-                color: #000000;
-            }
-        }
-    }
-
+    
     .user-block {
         margin-top:20px;
         padding:12px 0;
