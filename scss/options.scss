@@ -85,4 +85,27 @@
             }
         }
     }
+
+    .foot {
+        margin-top:60px;
+        display: flex;
+        flex-direction: column;
+        
+        p {
+            font-family: Gilroy;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 30px;
+            text-align: center;
+            color: #586271;
+        }
+        
+        a {
+            display: block;
+            margin-top:30px;
+            color:#3A78BC;
+            text-decoration: underline;
+        }
+    }
 }

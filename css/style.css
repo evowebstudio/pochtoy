@@ -1698,6 +1698,55 @@ header .header .alert-block.active:after {
   box-shadow: none;
   border: none;
 }
+.calc .field-footer {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #586271;
+  cursor: pointer;
+}
+.calc .field-footer:after {
+  content: "";
+  display: block;
+  margin-left: 10px;
+  width: 12px;
+  height: 7px;
+  background-image: url("../img/icons/arr-down-gray.svg");
+  background-repeat: no-repeat;
+  background-size: 12px 7px;
+  background-position: center;
+}
+.calc.f-column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 390px;
+  margin-right: 0;
+}
+.calc.f-column .field {
+  margin-bottom: 20px;
+  width: 299px;
+}
 
 .calc-results {
   display: -webkit-box;
@@ -1754,6 +1803,83 @@ header .header .alert-block.active:after {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
   color: #3A78BC;
+}
+
+.calc-sidebar-wrapper {
+  margin: 100px auto 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.calc-sidebar-wrapper .calc-sidebar .tabs {
+  margin-bottom: 20px;
+  max-width: 437px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border: 2px solid #FF006D;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 20px;
+}
+.calc-sidebar-wrapper .calc-sidebar .tabs p {
+  padding: 24px 20px;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #FF006D;
+  cursor: pointer;
+  border-radius: 16px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.calc-sidebar-wrapper .calc-sidebar .tabs p.active {
+  background-color: #FF006D;
+  color: #fff;
+}
+.calc-sidebar-wrapper .calc-sidebar .content .title {
+  margin-bottom: 20px;
+  max-width: 596px;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 80px;
+  letter-spacing: -0.01em;
+  color: #3A78BC;
+}
+.calc-sidebar-wrapper .calc-sidebar .content .text {
+  max-width: 569px;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  color: #000000;
 }
 
 .options {
@@ -1870,6 +1996,31 @@ header .header .alert-block.active:after {
 }
 .options .item .btn:hover {
   opacity: 0.8;
+}
+.options .foot {
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.options .foot p {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  color: #586271;
+}
+.options .foot a {
+  display: block;
+  margin-top: 30px;
+  color: #3A78BC;
+  text-decoration: underline;
 }
 
 .tour {
@@ -3000,4 +3151,111 @@ header .header .alert-block.active:after {
   line-height: 29px;
   text-align: center;
   color: #3A78BC;
+}
+
+.free-services {
+  position: relative;
+  margin: 24px auto 0;
+}
+.free-services .heading {
+  margin-top: 67px;
+  text-align: center;
+}
+.free-services .heading p {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 80px;
+  text-align: center;
+  letter-spacing: -0.01em;
+  color: #3A78BC;
+}
+.free-services .content {
+  width: 100%;
+  max-width: 1022px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.free-services .content .row {
+  margin-top: 67px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.free-services .content .row:nth-child(2) {
+  margin-top: 136px;
+}
+.free-services .content .row:nth-child(3) {
+  margin-top: 148px;
+}
+.free-services .content .row .line {
+  display: block;
+  width: 150px;
+  height: 2px;
+  background-color: #FF006D;
+}
+.free-services .content .row .description {
+  max-width: 478px;
+}
+.free-services .content .row .description .title {
+  margin-bottom: 15px;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+.free-services .content .row .description .text {
+  margin-bottom: 19px;
+  font-family: Gilroy;
+  font-size: 18px;
+  line-height: 30px;
+  color: #586271;
+}
+.free-services .content .row .description .label {
+  width: 155px;
+  height: 43px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 30px;
+  letter-spacing: 0.1em;
+  color: #FF006D;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 0px 60px #D5EAF1;
+          box-shadow: 0px 0px 60px #D5EAF1;
+  border-radius: 40px;
+  text-transform: uppercase;
 }
