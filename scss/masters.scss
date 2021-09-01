@@ -66,4 +66,88 @@
             }
         }
     }
+
+    &.with-form {
+        align-items: flex-start;
+
+        .image-block {
+            padding-top:56px;
+
+            p {
+                max-width: 187px;
+                margin-top:30px;
+            }
+        }
+
+        .description-block {
+            padding-top:30px;
+            width: calc(100% - 260px - 78px); 
+
+            p {
+                &.big {
+                   max-width: 810px;
+                    font-family: Gilroy;
+                    font-size: 24px;
+                    line-height: 38px;
+                    color: #000000;
+               }
+
+               &.small {
+                margin-top:5px;
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 15px;
+                color: #454E58;
+               }
+           }
+
+            input[type="text"] {
+                margin-top:15px;
+                padding:20px 40px;
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 22px;
+                line-height: 27px;
+                color: #616E81;
+                background: #FFFFFF;
+                box-shadow: 0px 0px 60px #D5EAF1;
+                border-radius: 10px;
+           }
+
+            .row {
+                margin-top:16px;
+                display: flex;
+                align-items: center;
+
+                .terms {
+                    margin-left: 50px;
+                    max-width: 511px;
+                    font-family: Gilroy;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 24px;
+                    color: rgba(0, 0, 0, 0.5);
+                }
+
+                .btn {
+                    margin-top:0;
+                }
+            }
+
+            .link {
+                margin-top:16px;
+                font-family: Gilroy;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 60px;
+                text-decoration-line: underline;
+                color: #3A78BC;
+            }
+        }
+    }
 }
