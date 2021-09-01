@@ -3339,10 +3339,10 @@ header .header .alert-block.active:after {
   text-transform: uppercase;
 }
 
-.discounts {
+.discounts-block {
   margin: 136px auto 0;
 }
-.discounts .heading {
+.discounts-block .heading {
   margin-bottom: 65px;
   font-family: Gilroy;
   font-size: 40px;
@@ -3350,7 +3350,7 @@ header .header .alert-block.active:after {
   text-align: center;
   color: #2E2828;
 }
-.discounts .grid {
+.discounts-block .grid {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3364,7 +3364,7 @@ header .header .alert-block.active:after {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.discounts .grid .item {
+.discounts-block .grid .item {
   width: 100%;
   max-width: 562px;
   padding: 30px;
@@ -3387,12 +3387,12 @@ header .header .alert-block.active:after {
           box-sizing: border-box;
   border-radius: 40px;
 }
-.discounts .grid .item .row {
+.discounts-block .grid .item .row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-.discounts .grid .item .row .title {
+.discounts-block .grid .item .row .title {
   margin-left: 24px;
   text-transform: uppercase;
   font-family: Montserrat;
@@ -3402,7 +3402,7 @@ header .header .alert-block.active:after {
   line-height: 40px;
   color: #000000;
 }
-.discounts .grid .item .size {
+.discounts-block .grid .item .size {
   height: 46px;
   padding: 0 20px;
   display: -webkit-box;
@@ -3422,7 +3422,7 @@ header .header .alert-block.active:after {
   background: linear-gradient(314.38deg, #FF86BA 7.46%, #FEBCD8 89.05%);
   border-radius: 20px;
 }
-.discounts .link {
+.discounts-block .link {
   display: block;
   margin-top: 24px;
   font-family: Gilroy;
