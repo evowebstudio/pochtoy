@@ -1,0 +1,57 @@
+.only-vip {
+    margin:90px auto 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .heading {
+        max-width: 799px;
+        margin-bottom:40px;
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 50px;
+        text-align: center;
+        color: #000000;
+
+        span {
+            color:#FF006D;
+        }
+    }
+
+    .description {
+        max-width: 800px;
+        margin-bottom:50px;
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 30px;
+        text-align: center;
+        color: #586271;   
+    }
+    
+    .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 830px;
+
+        .item {
+            padding:5px 20px;
+            margin-bottom:10px;
+            margin-right: 10px;
+            background: #3A78BC;
+            border-radius: 20px;
+            font-family: Gilroy;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 40px;
+            text-align: center;
+            color: #FFFFFF;
+        }
+    }
+}
