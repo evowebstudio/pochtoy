@@ -1080,6 +1080,9 @@ header .header .alert-block.active:after {
   background-position: center;
   background-size: contain;
 }
+.title-block .title.medium {
+  max-width: 757px;
+}
 .title-block .text {
   margin-top: 20px;
   max-width: 417px;
@@ -4396,4 +4399,159 @@ header .header .alert-block.active:after {
   line-height: 40px;
   text-align: center;
   color: #FFFFFF;
+}
+
+.shops-list {
+  margin: 60px auto;
+}
+.shops-list .shops-categories {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.shops-list .shops-categories .item {
+  margin: 0 3px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5px 20px;
+  background-color: #3A78BC;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 40px;
+  text-align: center;
+  color: #FFFFFF;
+  border-radius: 20px;
+}
+.shops-list .shops-categories .item.active {
+  background-color: #FF006D;
+}
+.shops-list .shops-categories .item:hover {
+  background-color: #FF006D;
+}
+.shops-list .shops-grid {
+  margin-top: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.shops-list .shops-grid .shop-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 25px;
+  width: 100%;
+  max-width: 363px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 0px 60px #D5EAF1;
+          box-shadow: 0px 0px 60px #D5EAF1;
+  border-radius: 40px;
+}
+.shops-list .shops-grid .shop-item .logo {
+  width: 100%;
+  padding: 30px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+.shops-list .shops-grid .shop-item .logo img {
+  display: block;
+  margin: 0 auto;
+}
+.shops-list .shops-grid .shop-item .description {
+  max-width: 295px;
+  padding: 40px 0 20px;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  height: calc(100% - 54px - 40px);
+}
+.shops-list .shops-grid .shop-item .row {
+  margin-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.shops-list .shops-grid .shop-item .row .link {
+  padding: 0 20px;
+  background: #BBD4EE;
+  border-radius: 10px;
+  text-align: center;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 40px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #4E7299;
+  text-transform: uppercase;
+}
+.shops-list .shops-grid .shop-item .row .link:first-child {
+  margin-right: 5px;
+}
+.shops-list .shops-grid .shop-item .row .link:hover {
+  opacity: 0.85;
 }
