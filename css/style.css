@@ -4826,7 +4826,7 @@ header .header .alert-block.active:after {
   left: 0;
   width: 32px;
   height: 32px;
-  background-image: url("/img/icons/nav-back.svg");
+  background-image: url("../img/icons/nav-back.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-color: transparent;
