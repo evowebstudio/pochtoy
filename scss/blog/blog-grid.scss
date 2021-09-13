@@ -1,0 +1,141 @@
+.blog-grid {
+    margin:100px auto 0;
+
+    .item {
+        margin-bottom: 75px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        &:last-child {
+            margin-bottom:0;
+        }
+
+        .image {
+            max-width: 459px;
+            margin-right: 82px;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: calc(100% - 459px - 82px);
+
+            .title {
+                font-family: Gilroy;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 32px;
+                line-height: 42px;
+                color: #000000;
+
+                &:hover {
+                    color:#FE016D;
+                }
+            }
+
+            .excerpt {
+                font-family: Gilroy;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 17px;
+                line-height: 26px;
+                color: #586574;
+            }
+            
+            .row {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+
+                .col {
+                    display: flex;
+
+                    .date {
+                        font-family: Gilroy;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 17px;
+                        line-height: 26px;
+                        color: #000000;
+                        
+                        &:after {
+                            content: "·";
+                            margin-left: 10px;
+                            margin-right: 10px;
+                            font-family: Gilroy;
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 17px;
+                            line-height: 26px;
+                            color: #000000;
+                        }
+                    }
+    
+                    .views {
+                        font-family: Gilroy;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 17px;
+                        line-height: 26px;
+                        color:#a9a9a9;
+                    }
+
+                    .stars-wrap {
+                        display: inline-block;
+                        vertical-align: middle;
+                        position: relative;
+                        z-index: 1;
+    
+                        .stars {
+                            display: block;
+                            width: 108px;
+                            height: 19px;
+                            margin: 0;
+                            padding: 0;
+                            font-size: 0;
+                            white-space: nowrap;
+                            line-height: 19px;
+                            background-image: url('../img/star-array.svg');
+                            background-position: left top;
+                        }
+        
+                        .stars-fill {
+                            position: absolute;
+                            left: 1px;
+                            top: 1px;
+                            bottom: 1px;
+                            z-index: -1;
+                            background-color: #FF006D;
+                            width: 0%;
+    
+                            &[data-rating='1'] {
+                                width: 20%;
+                            }
+    
+                            &[data-rating='2'] {
+                                width: 40%;
+                            }
+    
+                            &[data-rating='3'] {
+                                width: 60%;
+                            }
+    
+                            &[data-rating='4'] {
+                                width: 80%;
+                            }
+                            
+                            &[data-rating='5'] {
+                                width: calc(100% - 3px);
+                            }
+                        }
+                    }
+                }  
+            }
+        }
+        
+    }
+
+}

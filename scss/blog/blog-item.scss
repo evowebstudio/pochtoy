@@ -1,0 +1,162 @@
+.blog-item {
+    margin:24px auto 0;
+
+    .blog-item-nav {
+        margin-top:24px;
+        position: relative;
+        display: flex;
+        padding-left: 85px;
+
+        .back {
+            position: absolute;
+            top:0;
+            left: 0;
+            width: 32px;
+            height: 32px;
+            background-image: url('/img/icons/nav-back.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: transparent;
+            border:none;
+        }
+
+        .categories {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            .item {
+                margin:4px;
+                padding:0 20px;
+                height: 28px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                background: #66A3E6;
+                border-radius: 20px;
+                font-family: Gilroy;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 17px;
+                text-align: center;
+                color: #FFFFFF;
+            }
+        }
+    }
+
+    .blog-item-content {
+        margin-left: 85px;
+        margin-top: 65px;
+        max-width: 712px;
+
+        h1, .title {
+            margin-bottom: 24px;
+            font-family: Gilroy;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 32px;
+            line-height: 42px;
+            color: #000000;
+        }
+
+        p {
+            margin-bottom:24px;
+            font-family: Gilroy;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 17px;
+            line-height: 26px;
+            color: #586574;
+        }
+
+        q {
+            display: block;
+            margin-top:40px;
+            margin-bottom: 40px;
+            padding-left: 40px;
+            border-left: 4px solid #5EB2FC;
+            font-family: Gilroy;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 30px;
+            color: #000000;
+        }
+
+        img {
+            max-width: 100%;
+            margin-bottom:36px;
+        }
+
+        h2, .mini-title {
+            margin-bottom:24px;
+            font-family: Gilroy;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 28px;
+            line-height: 26px;
+            color: #586574;
+        }
+
+        a {
+            color: #6392CA;
+            text-decoration: underline;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+
+        b, strong, .bold {
+            font-weight: 600;
+        }
+
+        .btn {
+            @include btnBig(#FFF, #FF006D, #FF006D);
+            margin:60px auto 0;
+            text-decoration: none;
+
+            &:hover {
+                @include btnBigHover;
+            }
+        }
+
+        .row {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-bottom:24px;
+
+            .date {
+                font-family: Gilroy;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 17px;
+                line-height: 26px;
+                color: #000000;
+                
+                &:after {
+                    content: "·";
+                    margin-left: 10px;
+                    margin-right: 10px;
+                    font-family: Gilroy;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 17px;
+                    line-height: 26px;
+                    color: #000000;
+                }
+            }
+
+            .views {
+                font-family: Gilroy;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 17px;
+                line-height: 26px;
+                color:#a9a9a9;
+            }
+        }
+    }
+}
