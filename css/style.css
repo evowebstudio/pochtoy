@@ -1050,6 +1050,9 @@ header .header .alert-block.active:after {
       -ms-flex-align: start;
           align-items: flex-start;
 }
+.title-block > div.sizes-title {
+  width: auto;
+}
 .title-block > div.img {
   -webkit-box-align: end;
       -ms-flex-align: end;
@@ -1082,6 +1085,7 @@ header .header .alert-block.active:after {
   background-size: contain;
 }
 .title-block .title.medium {
+  margin-top: 50px;
   max-width: 757px;
 }
 .title-block .title.title-blog {
@@ -1099,6 +1103,28 @@ header .header .alert-block.active:after {
 .title-block .text.bold {
   font-size: 18px;
   max-width: 544px;
+}
+.title-block .text.medium {
+  max-width: 100%;
+  font-size: 18px;
+}
+.title-block .with-border {
+  margin-top: 56px;
+  max-width: 706px;
+  padding: 40px 47px 40px 50px;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  background: #FFFFFF;
+  border: 2px solid #FF86BA;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 0px 60px #D5EAF1;
+          box-shadow: 0px 0px 60px #D5EAF1;
+  border-radius: 40px;
 }
 .title-block .btn {
   display: -webkit-box;
@@ -4499,6 +4525,7 @@ header .header .alert-block.active:after {
 .shops-list .shops-grid .shop-item .logo img {
   display: block;
   margin: 0 auto;
+  max-width: 90px;
 }
 .shops-list .shops-grid .shop-item .description {
   max-width: 295px;
@@ -4997,4 +5024,290 @@ header .header .alert-block.active:after {
   font-size: 17px;
   line-height: 26px;
   color: #a9a9a9;
+}
+
+.sizes-page {
+  margin: 0 auto;
+}
+.sizes-page .title {
+  margin: 100px auto 0;
+  max-width: 829px;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 60px;
+  text-align: center;
+  color: #040404;
+}
+.sizes-page .mini-title {
+  max-width: 621px;
+  margin: 20px auto 0;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 30px;
+  text-align: center;
+  color: #586271;
+}
+.sizes-page .grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 48px;
+}
+.sizes-page .grid .item {
+  max-width: 371px;
+  padding: 40px;
+  margin-right: 13px;
+  margin-bottom: 13px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 0px 60px #D5EAF1;
+          box-shadow: 0px 0px 60px #D5EAF1;
+  border-radius: 40px;
+}
+.sizes-page .grid .item:nth-child(3n) {
+  margin-right: 0;
+}
+.sizes-page .grid .item .heading {
+  min-height: 106px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  color: #000000;
+}
+.sizes-page .grid .item .heading span {
+  margin-left: 20px;
+}
+.sizes-page .grid .item .content {
+  padding-left: 35px;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+.sizes-page .sizes-table {
+  margin-top: 48px;
+  background: #FFFFFF;
+  border: 2px solid #FF86BA;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 0px 60px #D5EAF1;
+          box-shadow: 0px 0px 60px #D5EAF1;
+  border-radius: 40px;
+}
+.sizes-page .sizes-table .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 16px;
+  width: 297px;
+  min-height: 60px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #3A78BC;
+  background: #FFF;
+  border: 2px solid #3A78BC;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 40px;
+  margin: 40px auto 50px;
+}
+.sizes-page .sizes-table .btn:hover {
+  opacity: 0.8;
+}
+.sizes-page .sizes-table .tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 32px 50px 0;
+}
+.sizes-page .sizes-table .tabs .tab {
+  margin-right: 45px;
+  padding-bottom: 32px;
+  cursor: pointer;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  color: #000000;
+  opacity: 0.75;
+}
+.sizes-page .sizes-table .tabs .tab:last-child {
+  margin-right: 0;
+}
+.sizes-page .sizes-table .tabs .tab.active {
+  position: relative;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 28px;
+  color: #000000;
+}
+.sizes-page .sizes-table .tabs .tab.active:after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+}
+.sizes-page .sizes-table table {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.sizes-page .sizes-table table thead {
+  width: 100%;
+  background: #FEFAFF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.sizes-page .sizes-table table thead tr {
+  width: 100%;
+}
+.sizes-page .sizes-table table thead tr th {
+  padding: 40px 0 46px;
+  text-align: left;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+  border-top: 1px solid #FF2380;
+  border-bottom: 1px solid #FF2380;
+}
+.sizes-page .sizes-table table thead tr th:first-child {
+  padding-left: 49px;
+}
+.sizes-page .sizes-table table#casual thead tr th:first-child {
+  max-width: 120px;
+}
+.sizes-page .sizes-table table#headdress thead {
+  border-top-right-radius: 40px;
+  border-top-left-radius: 40px;
+}
+.sizes-page .sizes-table table#headdress thead tr th {
+  border-top: 0;
+}
+.sizes-page .sizes-table table#headdress thead tr th:last-child {
+  border-top-right-radius: 40px;
+}
+.sizes-page .sizes-table table#headdress thead tr th:first-child {
+  border-top-left-radius: 40px;
+}
+.sizes-page .sizes-table table tbody {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.sizes-page .sizes-table table tbody tr {
+  width: 100%;
+}
+.sizes-page .sizes-table table tbody tr td {
+  padding: 20px 0;
+  text-align: left;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.sizes-page .sizes-table table tbody tr td:first-child {
+  padding-left: 49px;
+}
+.sizes-page .sizes-table table tbody tr:last-child td {
+  border-bottom: 0;
+}
+.sizes-page .size-table-footer {
+  margin: 68px auto 0;
+  max-width: 811px;
+}
+.sizes-page .size-table-footer p {
+  margin-bottom: 29px;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 30px;
+  text-align: center;
+  color: #586271;
+}
+.sizes-page .size-table-footer p span {
+  font-weight: 600;
+}
+.sizes-page .size-table-footer p:last-child {
+  margin-bottom: 0;
+  font-size: 18px;
+  line-height: 26px;
+}
+.sizes-page .size-table-footer .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 29px;
+}
+.sizes-page .size-table-footer .row .item {
+  margin-right: 16px;
+  padding: 18px 26px;
+  background: #000000;
+  -webkit-box-shadow: 0px 0px 60px #D5EAF1;
+          box-shadow: 0px 0px 60px #D5EAF1;
+  border-radius: 20px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+.sizes-page .size-table-footer .row .item:last-child {
+  margin-right: 0;
 }

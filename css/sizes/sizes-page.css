@@ -1,0 +1,8 @@
+.sizes-page {
+  margin: 0 auto;
+}
+.sizes-page .title {
+  margin: 100px auto 0;
+  text-align: center;
+  max-width: 829px;
+}

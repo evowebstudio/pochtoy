@@ -11,6 +11,10 @@
         justify-content: center;
         align-items: flex-start;
 
+        &.sizes-title {
+            width: auto;
+        }
+
         &.img {
             align-items: flex-end;
         }
@@ -47,6 +51,7 @@
         }
 
         &.medium {
+            margin-top:50px;
             max-width: 757px;
         }
 
@@ -68,6 +73,28 @@
             font-size:18px;
             max-width: 544px;
         }
+        
+        &.medium {
+            max-width: 100%;
+            font-size: 18px;
+        }
+    }
+
+    .with-border {
+        margin-top:56px;
+        max-width: 706px;
+        padding:40px 47px 40px 50px;
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        color: #000000;
+        background: #FFFFFF;
+        border: 2px solid #FF86BA;
+        box-sizing: border-box;
+        box-shadow: 0px 0px 60px #D5EAF1;
+        border-radius: 40px;
     }
 
     .btn {

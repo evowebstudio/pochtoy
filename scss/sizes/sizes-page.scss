@@ -1,0 +1,286 @@
+.sizes-page {
+    margin:0 auto;
+
+    .title {
+        margin:100px auto 0;
+        max-width: 829px;
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 60px;
+        text-align: center;
+        color: #040404;
+    }
+
+    .mini-title {
+        max-width: 621px;
+        margin:20px auto 0;
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 30px;
+        text-align: center;
+        color: #586271;
+    }
+
+    .grid {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top:48px;
+
+
+        .item {
+            max-width: 371px;
+            padding:40px;
+            margin-right: 13px;
+            margin-bottom: 13px;
+            background: #FFFFFF;
+            box-shadow: 0px 0px 60px #D5EAF1;
+            border-radius: 40px;
+
+            &:nth-child(3n) {
+                margin-right: 0;
+            }
+
+            .heading {
+                min-height: 106px;
+                display: flex;
+                flex-direction: row;
+                font-family: Gilroy;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 30px;
+                color: #000000;
+
+                span {
+                    margin-left: 20px;
+                }
+            }
+
+            .content {
+                padding-left: 35px;
+                font-family: Gilroy;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+                color: #000000;
+            }
+        }
+    }
+
+    .sizes-table {
+        margin-top:48px;
+        background: #FFFFFF;
+        border: 2px solid #FF86BA;
+        box-sizing: border-box;
+        box-shadow: 0px 0px 60px #D5EAF1;
+        border-radius: 40px;
+
+        .btn {
+            @include btnBig(#3A78BC, #FFF, #3A78BC);
+            margin:40px auto 50px;
+
+            &:hover {
+                @include btnBigHover;
+            }
+        }
+
+        .tabs {
+            display: flex;
+            flex-direction: row;
+            padding:32px 50px 0;
+
+            .tab {
+                margin-right: 45px;
+                padding-bottom: 32px;
+                cursor: pointer;
+                font-family: Gilroy;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 28px;
+                color: #000000;
+                opacity: 0.75;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                &.active {
+                    position: relative;
+                    font-family: Gilroy;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 20px;
+                    line-height: 28px;
+                    color: #000000;
+
+                    &:after {
+                        content: "";
+                        //width: calc(100% - 10px);
+                        width: 100%;
+                        height: 2px;
+                        background-color: #000;
+                        position: absolute;
+                        bottom:-1px;
+                        left: 0;
+                    }
+                }
+            }
+            
+        }
+
+        table {
+            width: 100%;
+            box-sizing: border-box;
+
+            thead {
+                width: 100%;
+                background: #FEFAFF;
+                box-sizing: border-box;
+
+                tr {
+                    width: 100%;
+                    
+                    th {
+                        padding:40px 0 46px;
+                        text-align:left;
+                        box-sizing: border-box;
+                        font-family: Gilroy;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 18px;
+                        line-height: 28px;
+                        border-top: 1px solid #FF2380;
+                        border-bottom: 1px solid #FF2380;
+                       
+                        &:first-child {
+                            padding-left: 49px;
+                        }
+                    }
+                }
+            }
+
+            &#casual {
+                thead {
+                    tr{
+                        th{
+                            &:first-child {
+                                max-width: 120px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &#headdress {
+                thead {
+                    border-top-right-radius: 40px;
+                    border-top-left-radius: 40px;
+
+                    tr {
+
+                        th {
+                            border-top:0;
+
+                            &:last-child {
+                                border-top-right-radius: 40px;
+                            }
+
+                            &:first-child {
+                                border-top-left-radius: 40px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            tbody {
+                width: 100%;
+                box-sizing: border-box;
+
+                tr {
+                    width: 100%;
+
+                    td {
+                        padding:20px 0;
+                        text-align:left;
+                        box-sizing: border-box;
+                        font-family: Gilroy;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 20px;
+                        line-height: 30px;
+                        border-bottom: 1px solid rgba(0,0,0,0.1);
+
+                        &:first-child {
+                            padding-left: 49px;
+                        }
+                    }
+
+                    &:last-child {
+                        td {
+                            border-bottom:0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .size-table-footer {
+        margin:68px auto 0;
+        max-width: 811px;
+
+        p {
+            margin-bottom:29px;
+            font-family: Gilroy;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 30px;
+            text-align: center;
+            color: #586271;
+
+            span {
+                font-weight: 600;
+            }
+            
+            &:last-child {
+                margin-bottom:0;
+                font-size: 18px;
+                line-height: 26px;
+            }
+        }
+        
+        .row {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-bottom:29px;
+
+            .item {
+                margin-right: 16px;
+                padding:18px 26px;
+                background: #000000;
+                box-shadow: 0px 0px 60px #D5EAF1;
+                border-radius: 20px;
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 24px;
+                color: #FFFFFF;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
