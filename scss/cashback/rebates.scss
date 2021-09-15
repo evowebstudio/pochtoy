@@ -1,0 +1,107 @@
+.rebates {
+    margin:64px auto 0;
+
+    .title {
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 32px;
+        text-align: center;
+        color: #000000;
+    }
+
+    .mini-title {
+        max-width: 872px;
+        margin:20px auto 0;
+        font-family: Gilroy;
+        font-size: 18px;
+        line-height: 26px;
+        text-align: center;
+        color: #586271;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top:70px;
+    
+        .col {
+            width: 100%;
+            max-width: 550px;
+            padding:55px 50px 60px 0;
+            background: #FFFFFF;
+            box-shadow: 0px 0px 60px #D5EAF1;
+            border-radius: 40px;
+
+            .title {
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 32px;
+                line-height: 40px;
+                text-align: center;
+                color: #000000;
+            }
+
+            ul {
+                margin-top:60px;
+
+                li {
+                    margin: 0 0 20px 50px;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    position: relative;
+                    font-family: Montserrat;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 1.5;
+                    color:#000;
+
+                    &:last-child {
+                        margin-bottom:0;
+                    }
+
+                    span {
+                        margin-right: 20px;
+                        width: 54px;
+                        height: 54px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        font-family: Montserrat;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 24px;
+                        line-height: 40px;
+                        color: #FF86BA;
+                        border: 2px solid #FF86BA;
+                        box-sizing: border-box;
+                        border-radius: 27px;
+                    }
+
+                    
+                    a {
+                        margin-right: 5px;
+                        color: #3A78BC;
+                        text-decoration: underline;
+
+                        &:hover {
+                            text-decoration: none;
+                        }
+                    }
+                }
+
+                img {
+                    display: block;
+                    margin:10px auto 0;
+                }
+            }
+        }
+    }
+}

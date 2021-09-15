@@ -19,6 +19,10 @@
     max-width: $maxWidthContent;
 }
 
+.justify-content-between {
+    justify-content: space-between;
+}
+
 .btn {
     @include btn (#FFF, #FF006D, 0 13px);
 
