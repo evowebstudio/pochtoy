@@ -15,8 +15,22 @@
             width: auto;
         }
 
+        &.partners-program {
+            max-width: 656px;
+            width: auto;
+        }
+
         &.img {
             align-items: flex-end;
+
+            &.partners-program {
+                width: 100%;
+                max-width: 475px;
+                justify-content: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
         }
     }
 
