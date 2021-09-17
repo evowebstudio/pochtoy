@@ -5479,7 +5479,7 @@ header .header .alert-block.active:after {
   margin: 10px auto 0;
 }
 
-.partners-program-start {
+.affiliates-start {
   margin: 50px auto 0;
   padding: 25px 0;
   display: -webkit-box;
@@ -5497,14 +5497,14 @@ header .header .alert-block.active:after {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  border: 2px solid #FF86BA;
+  border: 2px solid #ff86ba;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  -webkit-filter: drop-shadow(0px 0px 60px #D5EAF1);
-          filter: drop-shadow(0px 0px 60px #D5EAF1);
+  -webkit-filter: drop-shadow(0px 0px 60px #d5eaf1);
+          filter: drop-shadow(0px 0px 60px #d5eaf1);
   border-radius: 40px;
 }
-.partners-program-start p {
+.affiliates-start p {
   margin-right: 60px;
   font-family: Montserrat;
   font-style: normal;
@@ -5512,9 +5512,9 @@ header .header .alert-block.active:after {
   font-size: 24px;
   line-height: 40px;
   text-align: center;
-  color: #FF2380;
+  color: #ff2380;
 }
-.partners-program-start .btn {
+.affiliates-start .btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5533,14 +5533,230 @@ header .header .alert-block.active:after {
   min-height: 60px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  color: #FFF;
-  background: #FF006D;
-  border: 2px solid #FF006D;
+  color: #fff;
+  background: #ff006d;
+  border: 2px solid #ff006d;
   border-radius: 10px;
   font-weight: 600;
   font-size: 16px;
   line-height: 40px;
 }
-.partners-program-start .btn:hover {
+.affiliates-start .btn:hover {
+  opacity: 0.8;
+}
+
+.affiliates-description {
+  margin: 100px auto 0;
+}
+.affiliates-description .title {
+  margin-bottom: 25px;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #000000;
+}
+.affiliates-description .grid {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.affiliates-description .grid .item {
+  margin-bottom: 40px;
+  padding: 40px 30px 40px 50px;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 0px 60px #d5eaf1;
+          box-shadow: 0px 0px 60px #d5eaf1;
+  border-radius: 40px;
+}
+.affiliates-description .grid .item .heading {
+  max-width: 470px;
+  min-height: 60px;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: #ff006d;
+}
+.affiliates-description .grid .item .text {
+  max-width: 470px;
+  margin-top: 12px;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.affiliates-promo {
+  margin: 60px auto 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.affiliates-promo .title {
+  margin-top: 64px;
+  margin-bottom: 20px;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 32px;
+  text-align: center;
+  color: #000000;
+}
+.affiliates-promo .description {
+  margin-bottom: 40px;
+  max-width: 872px;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  color: #000000;
+}
+.affiliates-promo .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 16px;
+  width: 297px;
+  min-height: 60px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #fff;
+  background: #3a78bc;
+  border: 2px solid #3a78bc;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 40px;
+  width: 339px;
+}
+.affiliates-promo .btn:hover {
+  opacity: 0.8;
+}
+.affiliates-promo .footer {
+  display: block;
+  max-width: 642px;
+  margin: 100px 0 0;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.75);
+}
+.affiliates-promo .footer a {
+  color: #3a78bc;
+  text-decoration: underline;
+}
+.affiliates-promo .footer a:hover {
+  text-decoration: none;
+}
+
+.affiliates-join {
+  max-width: 846px;
+  margin: 100px auto 0;
+  padding: 50px 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #ffffff;
+  border: 2px solid #ff86ba;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 0px 60px #d5eaf1;
+          box-shadow: 0px 0px 60px #d5eaf1;
+  border-radius: 40px;
+}
+.affiliates-join .title {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 32px;
+  text-align: center;
+  color: #000000;
+}
+.affiliates-join .description {
+  margin-top: 20px;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  color: #000000;
+}
+.affiliates-join .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 16px;
+  width: 297px;
+  min-height: 60px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #fff;
+  background: #ff006d;
+  border: 2px solid #ff006d;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 40px;
+  margin-top: 40px;
+}
+.affiliates-join .btn:hover {
   opacity: 0.8;
 }

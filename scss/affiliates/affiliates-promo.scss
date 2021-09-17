@@ -1,0 +1,61 @@
+.affiliates-promo {
+  margin: 60px auto 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .title {
+    margin-top: 64px;
+    margin-bottom: 20px;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 32px;
+    text-align: center;
+    color: #000000;
+  }
+
+  .description {
+    margin-bottom: 40px;
+    max-width: 872px;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    color: #000000;
+  }
+
+  .btn {
+    @include btnBig(#fff, #3a78bc, #3a78bc);
+    width: 339px;
+
+    &:hover {
+      @include btnBigHover;
+    }
+  }
+
+  .footer {
+    display: block;
+    max-width: 642px;
+    margin: 100px 0 0;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.75);
+
+    a {
+      color: #3a78bc;
+      text-decoration: underline;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
