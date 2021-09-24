@@ -1069,6 +1069,10 @@ header .header .alert-block.active:after {
   max-width: 656px;
   width: auto;
 }
+.title-block > div.blacklist-page {
+  max-width: 100%;
+  width: 689px;
+}
 .title-block > div.img {
   -webkit-box-align: end;
       -ms-flex-align: end;
@@ -1091,10 +1095,13 @@ header .header .alert-block.active:after {
       -ms-flex-align: center;
           align-items: center;
 }
+.title-block > div.img.blacklist-page {
+  max-width: 384px;
+}
 .title-block .title {
   position: relative;
   max-width: 460px;
-  color: #3A78BC;
+  color: #3a78bc;
   font-family: "Gilroy";
   font-weight: 600;
   font-size: 56px;
@@ -1102,7 +1109,7 @@ header .header .alert-block.active:after {
   letter-spacing: -0.01em;
 }
 .title-block .title span {
-  color: #FF006D;
+  color: #ff006d;
 }
 .title-block .title.with-label:before {
   content: "";
@@ -1141,6 +1148,17 @@ header .header .alert-block.active:after {
   max-width: 100%;
   font-size: 18px;
 }
+.title-block .text.with-left-border {
+  margin-top: 44px;
+  padding-left: 40px;
+  max-width: 682px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  color: #000000;
+  border-left: 4px solid #5eb2fc;
+}
 .title-block .with-border {
   margin-top: 56px;
   max-width: 706px;
@@ -1151,12 +1169,12 @@ header .header .alert-block.active:after {
   font-size: 16px;
   line-height: 24px;
   color: #000000;
-  background: #FFFFFF;
-  border: 2px solid #FF86BA;
+  background: #ffffff;
+  border: 2px solid #ff86ba;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  -webkit-box-shadow: 0px 0px 60px #D5EAF1;
-          box-shadow: 0px 0px 60px #D5EAF1;
+  -webkit-box-shadow: 0px 0px 60px #d5eaf1;
+          box-shadow: 0px 0px 60px #d5eaf1;
   border-radius: 40px;
 }
 .title-block .with-border span {
@@ -1170,7 +1188,7 @@ header .header .alert-block.active:after {
   color: #000000;
 }
 .title-block .with-border a {
-  color: #3A78BC;
+  color: #3a78bc;
 }
 .title-block .btn {
   display: -webkit-box;
@@ -1191,9 +1209,9 @@ header .header .alert-block.active:after {
   min-height: 60px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  color: #FFF;
-  background: #FF006D;
-  border: 2px solid #FF006D;
+  color: #fff;
+  background: #ff006d;
+  border: 2px solid #ff006d;
   border-radius: 10px;
   font-weight: 600;
   font-size: 16px;
@@ -5758,5 +5776,97 @@ header .header .alert-block.active:after {
   margin-top: 40px;
 }
 .affiliates-join .btn:hover {
+  opacity: 0.8;
+}
+
+.blacklist-search {
+  margin: 34px auto 0;
+}
+.blacklist-search p {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 26px;
+  color: #000000;
+}
+.blacklist-search .blacklist-search-input {
+  margin-top: 38px;
+  padding: 23px 35px;
+  width: 100%;
+  max-width: 948px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 40px;
+  color: #616e81;
+  border: 2px solid #ff006d;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 20px;
+}
+
+.blacklist-shops {
+  margin: 57px auto 0;
+}
+.blacklist-shops .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.blacklist-shops .list .item {
+  margin: 0 16px 16px 0;
+  list-style: none;
+  padding: 19px 26px;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 0px 60px #d5eaf1;
+          box-shadow: 0px 0px 60px #d5eaf1;
+  border-radius: 30px;
+}
+.blacklist-shops .list .item a,
+.blacklist-shops .list .item p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 40px;
+  color: #000000;
+}
+.blacklist-shops .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 16px;
+  width: 297px;
+  min-height: 60px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #fff;
+  background: #3a78bc;
+  border: 2px solid #3a78bc;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 40px;
+  margin: 60px auto 0;
+}
+.blacklist-shops .btn:hover {
   opacity: 0.8;
 }

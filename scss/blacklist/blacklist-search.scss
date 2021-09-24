@@ -1,0 +1,28 @@
+.blacklist-search {
+  margin: 34px auto 0;
+
+  p {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 26px;
+    color: #000000;
+  }
+
+  .blacklist-search-input {
+    margin-top: 38px;
+    padding: 23px 35px;
+    width: 100%;
+    max-width: 948px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 40px;
+    color: #616e81;
+    border: 2px solid #ff006d;
+    box-sizing: border-box;
+    border-radius: 20px;
+  }
+}

@@ -1,0 +1,37 @@
+.blacklist-shops {
+  margin: 57px auto 0;
+
+  .list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .item {
+      margin: 0 16px 16px 0;
+      list-style: none;
+      padding: 19px 26px;
+      background: #ffffff;
+      box-shadow: 0px 0px 60px #d5eaf1;
+      border-radius: 30px;
+
+      a,
+      p {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 40px;
+        color: #000000;
+      }
+    }
+  }
+
+  .btn {
+    @include btnBig(#fff, #3a78bc, #3a78bc);
+    margin: 60px auto 0;
+
+    &:hover {
+      @include btnBigHover;
+    }
+  }
+}
