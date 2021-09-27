@@ -1,0 +1,117 @@
+.pvz-page-city {
+  margin: 52px auto 0;
+
+  background: #ffffff;
+  border: 2px solid #ff86ba;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 60px #d5eaf1;
+  border-radius: 40px;
+
+  .heading {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 33px 52px;
+    border-bottom: 1px solid #ff2380;
+    cursor: pointer;
+    background-position: calc(100% - 50px) center;
+    background-repeat: no-repeat;
+    background-size: 24px 12px;
+    background-image: url("../img/icons/arr-down_black.svg");
+
+    &::before {
+      content: "";
+      display: block;
+      width: 54px;
+      height: 54px;
+      margin-right: 32px;
+      background-position: center;
+      background-size: 54px;
+      background-repeat: no-repeat;
+      background-image: url("../img/icons/pvz4.svg");
+    }
+
+    p {
+      font-family: Gilroy;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 30px;
+      color: #000000;
+    }
+  }
+
+  .content {
+    max-width: 100%;
+
+    table {
+      width: 100%;
+
+      thead {
+        tr {
+          th {
+            padding: 30px 52px;
+            font-family: Gilroy;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 30px;
+            color: #586271;
+            text-align: left;
+          }
+        }
+      }
+
+      tbody {
+        tr {
+          background: #fff5f9;
+
+          &:nth-child(even) {
+            background: #fff;
+          }
+
+          td {
+            padding: 15px 52px;
+            font-family: Gilroy;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 30px;
+            color: #000000;
+          }
+        }
+      }
+    }
+
+    &.empty {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 390px;
+
+      p {
+        text-align: center;
+        max-width: 762px;
+        margin: 0 auto;
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 36px;
+        line-height: 44px;
+        color: #586271;
+        opacity: 0.5;
+      }
+    }
+
+    .btn {
+      @include btnBig(#fff, #3a78bc, #3a78bc);
+      margin: 60px auto 44px;
+
+      &:hover {
+        @include btnBigHover;
+      }
+    }
+  }
+}

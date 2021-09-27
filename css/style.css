@@ -5870,3 +5870,358 @@ header .header .alert-block.active:after {
 .blacklist-shops .btn:hover {
   opacity: 0.8;
 }
+
+.pvz-page-news {
+  margin: 32px auto 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.pvz-page-news .item {
+  width: 559px;
+  padding: 14px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #e1eafb;
+  border: 2px solid #4081ff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 0px 60px #d5eaf1;
+          box-shadow: 0px 0px 60px #d5eaf1;
+  border-radius: 24px;
+}
+.pvz-page-news .item .description {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+}
+.pvz-page-news .item .description a {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #4081ff;
+}
+.pvz-page-news .item .icon {
+  width: 45px;
+  height: 45px;
+  margin-right: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pvz-page-title {
+  margin: 70px auto 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.pvz-page-title .title {
+  margin-top: 42px;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 32px;
+  text-align: center;
+  color: #000000;
+}
+.pvz-page-title .description {
+  margin-top: 20px;
+  max-width: 842px;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  color: #000000;
+}
+.pvz-page-title .pvz-select {
+  margin-top: 52px;
+  width: 100%;
+  max-width: 707px;
+  padding: 30px 0 30px 0;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 0px 60px #d5eaf1;
+          box-shadow: 0px 0px 60px #d5eaf1;
+  border-radius: 40px;
+  cursor: pointer;
+}
+.pvz-page-title .pvz-select .pvz-select-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 30px;
+  padding-right: 40px;
+}
+.pvz-page-title .pvz-select .pvz-select-main .icon {
+  margin-right: 32px;
+}
+.pvz-page-title .pvz-select .pvz-select-main .description {
+  margin-top: 0;
+  text-align: left;
+}
+.pvz-page-title .pvz-select .pvz-select-main .description p:first-child {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+}
+.pvz-page-title .pvz-select .pvz-select-main .description p:nth-child(2) {
+  max-width: 506px;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 30px;
+  color: #586271;
+}
+.pvz-page-title .pvz-select .pvz-select-main button {
+  width: 16px;
+  height: 8px;
+  margin-left: 38px;
+  display: block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 16px 8px;
+  background-image: url("../img/icons/arr-down_black.svg");
+}
+.pvz-page-title .pvz-select .pvz-select-child {
+  display: none;
+  margin-top: 30px;
+}
+.pvz-page-title .pvz-select .pvz-select-child.active {
+  display: block;
+}
+.pvz-page-title .pvz-select .pvz-select-child .item {
+  padding: 16px 0 0 114px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.pvz-page-title .pvz-select .pvz-select-child .item input[type=radio] {
+  margin-right: 16px;
+  width: 24px;
+  height: 24px;
+  border: 1.5px solid #bac1e7;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 20px;
+}
+.pvz-page-title .pvz-select .pvz-select-child .item .info {
+  cursor: pointer;
+}
+.pvz-page-title .pvz-select .pvz-select-child .item .info p:first-child {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+}
+.pvz-page-title .pvz-select .pvz-select-child .item .info p:nth-child(2) {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  color: #586271;
+}
+
+.pvz-page-city {
+  margin: 52px auto 0;
+  background: #ffffff;
+  border: 2px solid #ff86ba;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 0px 60px #d5eaf1;
+          box-shadow: 0px 0px 60px #d5eaf1;
+  border-radius: 40px;
+}
+.pvz-page-city .heading {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 33px 52px;
+  border-bottom: 1px solid #ff2380;
+  cursor: pointer;
+  background-position: calc(100% - 50px) center;
+  background-repeat: no-repeat;
+  background-size: 24px 12px;
+  background-image: url("../img/icons/arr-down_black.svg");
+}
+.pvz-page-city .heading::before {
+  content: "";
+  display: block;
+  width: 54px;
+  height: 54px;
+  margin-right: 32px;
+  background-position: center;
+  background-size: 54px;
+  background-repeat: no-repeat;
+  background-image: url("../img/icons/pvz4.svg");
+}
+.pvz-page-city .heading p {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+  color: #000000;
+}
+.pvz-page-city .content {
+  max-width: 100%;
+}
+.pvz-page-city .content table {
+  width: 100%;
+}
+.pvz-page-city .content table thead tr th {
+  padding: 30px 52px;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  color: #586271;
+  text-align: left;
+}
+.pvz-page-city .content table tbody tr {
+  background: #fff5f9;
+}
+.pvz-page-city .content table tbody tr:nth-child(even) {
+  background: #fff;
+}
+.pvz-page-city .content table tbody tr td {
+  padding: 15px 52px;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+}
+.pvz-page-city .content.empty {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 390px;
+}
+.pvz-page-city .content.empty p {
+  text-align: center;
+  max-width: 762px;
+  margin: 0 auto;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 44px;
+  color: #586271;
+  opacity: 0.5;
+}
+.pvz-page-city .content .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 16px;
+  width: 297px;
+  min-height: 60px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #fff;
+  background: #3a78bc;
+  border: 2px solid #3a78bc;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 40px;
+  margin: 60px auto 44px;
+}
+.pvz-page-city .content .btn:hover {
+  opacity: 0.8;
+}

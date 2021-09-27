@@ -1,0 +1,44 @@
+.pvz-page-news {
+  margin: 32px auto 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  .item {
+    width: 559px;
+    padding: 14px 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #e1eafb;
+    border: 2px solid #4081ff;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 60px #d5eaf1;
+    border-radius: 24px;
+
+    .description {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      color: #000000;
+
+      a {
+        text-decoration-line: underline;
+        color: #4081ff;
+      }
+    }
+
+    .icon {
+      width: 45px;
+      height: 45px;
+      margin-right: 32px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
