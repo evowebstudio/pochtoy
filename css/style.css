@@ -92,10 +92,23 @@ textarea:focus {
 }
 
 .shadow-block {
-  background: #FFFFFF;
-  -webkit-box-shadow: 0px 0px 20px #D1E6FB;
-          box-shadow: 0px 0px 20px #D1E6FB;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 0px 20px #d1e6fb;
+          box-shadow: 0px 0px 20px #d1e6fb;
   border-radius: 7px;
+}
+
+.flex-start {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .container-fluid {
@@ -119,27 +132,27 @@ textarea:focus {
 .btn {
   display: inline-block;
   padding: 0 13px;
-  background: #FF006D;
+  background: #ff006d;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
   line-height: 36px;
-  color: #FFF;
+  color: #fff;
   border-radius: 5px;
-  border: 2px solid #FF006D;
+  border: 2px solid #ff006d;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   min-width: 40px;
 }
 .btn.with-border {
-  color: #5B72EC;
-  background-color: #FFF;
-  border: 2px solid #5B72EC;
+  color: #5b72ec;
+  background-color: #fff;
+  border: 2px solid #5b72ec;
 }
 .btn.blue {
   color: #fff;
-  background-color: #5B72EC;
-  border: 2px solid #5B72EC;
+  background-color: #5b72ec;
+  border: 2px solid #5b72ec;
 }
 
 select {
@@ -1097,6 +1110,18 @@ header .header .alert-block.active:after {
 }
 .title-block > div.img.blacklist-page {
   max-width: 384px;
+}
+.title-block > div.img.flex-start {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 .title-block .title {
   position: relative;
@@ -6223,5 +6248,169 @@ header .header .alert-block.active:after {
   margin: 60px auto 44px;
 }
 .pvz-page-city .content .btn:hover {
+  opacity: 0.8;
+}
+
+.contacts-page {
+  margin: 90px auto 0;
+}
+.contacts-page .heading {
+  text-align: center;
+}
+.contacts-page .heading .title {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 60px;
+  color: #040404;
+}
+.contacts-page .heading .description {
+  margin: 20px auto 0;
+  max-width: 835px;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 30px;
+  text-align: center;
+  color: #586271;
+}
+.contacts-page .heading .description a {
+  color: #3a78bc;
+  text-decoration: underline;
+}
+.contacts-page .info-block {
+  margin: 50px auto 0;
+  background: #ffffff;
+  border: 2px solid #ff86ba;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 0px 60px #d5eaf1;
+          box-shadow: 0px 0px 60px #d5eaf1;
+  border-radius: 40px;
+}
+.contacts-page .info-block .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 35px 70px;
+  border-top: 1px solid #ff2380;
+}
+.contacts-page .info-block .row.align-start {
+  margin-top: 15px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.contacts-page .info-block .row:first-child {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-top: 0;
+}
+.contacts-page .info-block .row:first-child .title {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: #000000;
+}
+.contacts-page .info-block .row:first-child .description {
+  max-width: 497px;
+  width: 100%;
+  margin-top: 8px;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  color: #586271;
+}
+.contacts-page .info-block .row p {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000000;
+}
+.contacts-page .info-block .row p.bold {
+  width: 297px;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+}
+.contacts-page .info-block .row p.bold a {
+  text-decoration: underline;
+  color: #3a78bc;
+}
+.contacts-page .info-block .row .btn.blue {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 16px;
+  width: 297px;
+  min-height: 60px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #fff;
+  background: #3a78bc;
+  border: 2px solid #3a78bc;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 40px;
+}
+.contacts-page .info-block .row .btn.white {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 16px;
+  width: 297px;
+  min-height: 60px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #3a78bc;
+  background: #fff;
+  border: 2px solid #3a78bc;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 40px;
+}
+.contacts-page .info-block .row:hover {
   opacity: 0.8;
 }

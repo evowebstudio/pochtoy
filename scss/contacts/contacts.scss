@@ -1,0 +1,119 @@
+.contacts-page {
+  margin: 90px auto 0;
+
+  .heading {
+    text-align: center;
+
+    .title {
+      font-family: Gilroy;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 40px;
+      line-height: 60px;
+      color: #040404;
+    }
+
+    .description {
+      margin: 20px auto 0;
+      max-width: 835px;
+      font-family: Gilroy;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 30px;
+      text-align: center;
+      color: #586271;
+
+      a {
+        color: #3a78bc;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .info-block {
+    margin: 50px auto 0;
+    background: #ffffff;
+    border: 2px solid #ff86ba;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 60px #d5eaf1;
+    border-radius: 40px;
+
+    .row {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding: 35px 70px;
+      border-top: 1px solid #ff2380;
+
+      &.align-start {
+        margin-top: 15px;
+        align-items: flex-start;
+      }
+
+      &:first-child {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        border-top: 0;
+
+        .title {
+          font-family: Gilroy;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 24px;
+          line-height: 30px;
+          color: #000000;
+        }
+
+        .description {
+          max-width: 497px;
+          width: 100%;
+          margin-top: 8px;
+          font-family: Gilroy;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 26px;
+          color: #586271;
+        }
+      }
+
+      p {
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        color: #000000;
+
+        &.bold {
+          width: 297px;
+          font-family: Gilroy;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 30px;
+
+          a {
+            text-decoration: underline;
+            color: #3a78bc;
+          }
+        }
+      }
+
+      .btn {
+        &.blue {
+          @include btnBig(#fff, #3a78bc, #3a78bc);
+        }
+        &.white {
+          @include btnBig(#3a78bc, #fff, #3a78bc);
+        }
+      }
+
+      &:hover {
+        @include btnBigHover;
+      }
+    }
+  }
+}
