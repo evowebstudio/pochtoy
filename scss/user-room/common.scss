@@ -1,0 +1,229 @@
+.user-room {
+  width: 100%;
+  max-width: 778px;
+  padding: 20px 0 0 0;
+
+  .d-flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .justify-between {
+    justify-content: space-between;
+  }
+
+  .align-end {
+    align-items: flex-end;
+  }
+
+  .align-center {
+    align-items: center;
+  }
+
+  .time {
+    p {
+      &:first-child {
+        font-size: 11px;
+        line-height: 14px;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        color: #7d8590;
+        font-weight: 600;
+      }
+
+      &:nth-child(2) {
+        margin: 1px 0 0 0;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        color: #000000;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .balance {
+    text-align: right;
+
+    p {
+      &:first-child {
+        font-size: 11px;
+        line-height: 14px;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        color: #7d8590;
+        font-weight: 600;
+      }
+
+      &:nth-child(2) {
+        margin: 1px 0 0 18px;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        color: #ff006d;
+        font-weight: 600;
+      }
+    }
+
+    a {
+      font-weight: 500;
+      font-size: 12px;
+      color: #b9b9b9;
+    }
+  }
+
+  .top-text {
+    margin: 44px 0 32px 0;
+
+    p {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 17px;
+      color: #7d8590;
+
+      &:first-child {
+        margin: 0 0 5px 0;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        color: #2b343f;
+      }
+
+      &.warning {
+        position: relative;
+        margin: 20px 0 0 0;
+        padding: 0 0 0 41px;
+        display: flex;
+        flex-direction: row;
+
+        &::before {
+          content: "";
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 24px;
+          height: 24px;
+          background-image: url("../../img/icons/i_pink.svg");
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+      }
+    }
+  }
+
+  .white-block {
+    padding: 12px 32px;
+    margin: 0 0 9px;
+    background: #ffffff;
+    border: 1px solid #ebebeb;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 60px #d5eaf1;
+    border-radius: 10px;
+
+    p {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 30px;
+      color: #7d8590;
+
+      span {
+        color: #2b343f;
+      }
+
+      &.num {
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 40px;
+        color: #000000;
+      }
+
+      &.status {
+        &.ok {
+          color: #3dab92;
+        }
+
+        &.warning {
+          color: #ff006d;
+        }
+      }
+    }
+
+    .btn {
+      text-align: center;
+
+      &.medium {
+        width: 203px;
+      }
+
+      &.big {
+        width: 260px;
+      }
+    }
+
+    .arrow {
+      margin: 0 0 0 20px;
+      width: 12px;
+      height: 8px;
+      background-image: url("../../img/icons/arrow-down_green.svg");
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      cursor: pointer;
+    }
+
+    table {
+      tbody {
+        tr {
+          td {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 40px;
+            color: #2b343f;
+
+            &:first-child {
+              color: #abbdd2;
+            }
+
+            &:nth-child(2) {
+              padding: 0 0 0 30px;
+            }
+
+            .btn {
+              margin: 0 0 0 32px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .copy-block {
+    position: relative;
+    width: 223px;
+    border: 1px solid #d6d6d6;
+    box-sizing: border-box;
+    border-radius: 5px;
+
+    input[type="text"] {
+      padding: 0 0 0 20px;
+      font-weight: 600;
+      font-size: 13px;
+      line-height: 40px;
+      color: #2b343f;
+    }
+
+    .copy {
+      position: absolute;
+      right: 12px;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 40px;
+      color: #b9b9b9;
+    }
+  }
+}

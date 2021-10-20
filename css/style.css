@@ -6621,3 +6621,204 @@ header .header .alert-block.active:after {
           box-shadow: 0px 0px 60px #d5eaf1;
   border-radius: 30px;
 }
+
+.user-room {
+  width: 100%;
+  max-width: 778px;
+  padding: 20px 0 0 0;
+}
+.user-room .d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.user-room .justify-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.user-room .align-end {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.user-room .align-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.user-room .time p:first-child {
+  font-size: 11px;
+  line-height: 14px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #7d8590;
+  font-weight: 600;
+}
+.user-room .time p:nth-child(2) {
+  margin: 1px 0 0 0;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: 600;
+}
+.user-room .balance {
+  text-align: right;
+}
+.user-room .balance p:first-child {
+  font-size: 11px;
+  line-height: 14px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #7d8590;
+  font-weight: 600;
+}
+.user-room .balance p:nth-child(2) {
+  margin: 1px 0 0 18px;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #ff006d;
+  font-weight: 600;
+}
+.user-room .balance a {
+  font-weight: 500;
+  font-size: 12px;
+  color: #b9b9b9;
+}
+.user-room .top-text {
+  margin: 44px 0 32px 0;
+}
+.user-room .top-text p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #7d8590;
+}
+.user-room .top-text p:first-child {
+  margin: 0 0 5px 0;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #2b343f;
+}
+.user-room .top-text p.warning {
+  position: relative;
+  margin: 20px 0 0 0;
+  padding: 0 0 0 41px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.user-room .top-text p.warning::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  background-image: url("../../img/icons/i_pink.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.user-room .white-block {
+  padding: 12px 32px;
+  margin: 0 0 9px;
+  background: #ffffff;
+  border: 1px solid #ebebeb;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 0px 60px #d5eaf1;
+          box-shadow: 0px 0px 60px #d5eaf1;
+  border-radius: 10px;
+}
+.user-room .white-block p {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 30px;
+  color: #7d8590;
+}
+.user-room .white-block p span {
+  color: #2b343f;
+}
+.user-room .white-block p.num {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 40px;
+  color: #000000;
+}
+.user-room .white-block p.status.ok {
+  color: #3dab92;
+}
+.user-room .white-block p.status.warning {
+  color: #ff006d;
+}
+.user-room .white-block .btn {
+  text-align: center;
+}
+.user-room .white-block .btn.medium {
+  width: 203px;
+}
+.user-room .white-block .btn.big {
+  width: 260px;
+}
+.user-room .white-block .arrow {
+  margin: 0 0 0 20px;
+  width: 12px;
+  height: 8px;
+  background-image: url("../../img/icons/arrow-down_green.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.user-room .white-block table tbody tr td {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 40px;
+  color: #2b343f;
+}
+.user-room .white-block table tbody tr td:first-child {
+  color: #abbdd2;
+}
+.user-room .white-block table tbody tr td:nth-child(2) {
+  padding: 0 0 0 30px;
+}
+.user-room .white-block table tbody tr td .btn {
+  margin: 0 0 0 32px;
+}
+.user-room .copy-block {
+  position: relative;
+  width: 223px;
+  border: 1px solid #d6d6d6;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+}
+.user-room .copy-block input[type=text] {
+  padding: 0 0 0 20px;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 40px;
+  color: #2b343f;
+}
+.user-room .copy-block .copy {
+  position: absolute;
+  right: 12px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 40px;
+  color: #b9b9b9;
+}
