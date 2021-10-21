@@ -74,3 +74,9 @@ select {
   transition: border-color 0.4s linear;
   vertical-align: middle;
 }
+
+@media (max-width: 1180px) {
+  .content-area {
+    flex-wrap: wrap;
+  }
+}

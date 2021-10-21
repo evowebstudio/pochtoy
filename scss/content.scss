@@ -646,3 +646,43 @@
     border-top: 1px solid rgba(0, 0, 0, 0.05);
   }
 }
+
+@media (max-width: 1180px) {
+  .content {
+    max-width: 100%;
+    padding: 0 15px;
+
+    .time {
+      display: none;
+    }
+
+    .text-top {
+      margin-top: 20px;
+    }
+
+    .text-with-icon {
+      align-items: flex-start;
+
+      img {
+        width: 35px;
+        margin-right: 13px;
+      }
+    }
+
+    .form-block {
+      select {
+        display: block;
+        min-width: auto;
+      }
+
+      .input-group {
+        textarea {
+          min-height: 85px;
+        }
+        .btn {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

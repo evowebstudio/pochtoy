@@ -1,34 +1,38 @@
 .footer {
-    margin:30px auto 120px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
+  margin: 30px auto 120px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
 
-    .title {
-        margin-bottom:10px;
+  .title {
+    margin-bottom: 10px;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 30px;
+    color: #000000;
+  }
+
+  .nav {
+    .item {
+      a {
         font-family: Gilroy;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 16px;
+        font-size: 14px;
         line-height: 30px;
-        color: #000000;
-    }
+        color: rgba(0, 0, 0, 0.65);
 
-    .nav {
-
-        .item {
-
-            a {
-                font-family: Gilroy;
-                font-size: 14px;
-                line-height: 30px;
-                color: rgba(0, 0, 0, 0.65);
-
-                &:hover {
-                    color: #6392CA;
-                }
-            }
+        &:hover {
+          color: #6392ca;
         }
+      }
     }
+  }
+}
+
+@media (max-width: 1180px) {
+  .footer {
+    display: none;
+  }
 }
