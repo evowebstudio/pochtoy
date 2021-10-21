@@ -612,11 +612,15 @@ header .header .alert-block.active:after {
     margin-left: 32px;
     background-color: transparent;
     color: #616e81;
+    font-size: 12px;
   }
   .sidebar .user-block .time {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  .sidebar .user-block .time p {
+    font-size: 11px;
   }
 }
 .content {

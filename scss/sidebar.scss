@@ -287,11 +287,15 @@
           margin-left: 32px;
           background-color: transparent;
           color: #616e81;
+          font-size: 12px;
         }
       }
 
       .time {
         display: flex;
+        p {
+          font-size: 11px;
+        }
       }
     }
   }
