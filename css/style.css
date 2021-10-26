@@ -6969,6 +6969,108 @@ header .header .alert-block.active:after {
 .user-room .white-block table tbody tr td .btn {
   margin: 0 0 0 32px;
 }
+.user-room .white-block.incoming-package .description .info {
+  margin: 10px 0 0 0;
+}
+.user-room .white-block.incoming-package .description .info p {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 40px;
+  color: #abbdd2;
+}
+.user-room .white-block.incoming-package .description .info p span {
+  margin: 0 3px 0 0;
+  color: #2b343f;
+}
+.user-room .white-block.incoming-package .description .checkbox-row input[type=checkbox] {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.user-room .white-block.incoming-package .description .checkbox-row input[type=checkbox] + label {
+  cursor: pointer;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.user-room .white-block.incoming-package .description .checkbox-row input[type=checkbox] + label p {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #3578dc;
+}
+.user-room .white-block.incoming-package .description .checkbox-row input[type=checkbox] + label span {
+  display: block;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+  color: #000000;
+}
+.user-room .white-block.incoming-package .description .checkbox-row input[type=checkbox] + label::before {
+  margin: 0 20px 0 0;
+  content: "";
+  display: inline-block;
+  width: 39px;
+  height: 39px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  border: 1px solid #e4e4e4;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 29px 18px;
+}
+.user-room .white-block.incoming-package .description .checkbox-row input[type=checkbox]:checked + label::before {
+  border: 2px solid #3578dc;
+  /**/
+  background-image: url("https://evowebstudio.github.io/pochtoy/img/icons/checked_blue.svg");
+}
+.user-room .white-block.incoming-package .image p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  padding: 0 38px 0 0;
+  max-width: 189px;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: right;
+  color: #77889c;
+}
+.user-room .white-block.incoming-package .image p:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 5px;
+  right: 0;
+  width: 24px;
+  height: 24px;
+  background-image: url("https://evowebstudio.github.io/pochtoy/img/icons/i_pink.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.user-room .incoming-total {
+  margin: 30px 0 16px 0;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 23px;
+  color: #5977a0;
+}
 .user-room .copy-block {
   position: relative;
   width: 223px;
